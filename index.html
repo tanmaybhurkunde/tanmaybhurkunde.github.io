@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop-style.css">
+    <title>Portfolio - Leonardo Pires Goss</title>
+</head>
+<body>
+    <header>
+        <nav class="menu" id="navbar">
+            <a class="logo-link" href="#">
+                <img class="logo" src="images/toolbar_icons/logo.png" alt="Logo">
+            </a>
+            <button type="button" id="close-btn" aria-label="close menu">
+                <i class="material-icons">close</i>
+            </button>
+            <ul class="toolbar-links">
+                <li class="section-link">
+                    <a href="#recent-works" class="link">Portfolio</a>
+                </li>
+                <li class="section-link">
+                    <a href="#about-me" class="link">About</a>
+                </li>
+                <li class="section-link">
+                    <a href="#contact-form" class="link">Contact</a>
+                </li>
+                <li class="email-box">
+                    <a href="#" class="link">
+                        <img src="images/toolbar_icons/message.svg" alt="Contact author">
+                    </a>
+                </li>
+            </ul>
+            <button type="button" aria-label="menu" class="toolbar-icon">
+                <img src="images/toolbar_icons/hamburguer.svg" alt="Menu">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="headline">
+            <h1 class="title">
+                Hey There.<br>I’m Tanmay Bhurkunde
+            </h1>
+            <h3 class="subtitle">
+                I’m a Software Developer
+            </h3>
+            <p class="description">
+                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://github.com/tanmaybhurkunde">
+                        <img class="social-media-icon" src="images/social_media_icons/github.png" alt="Access Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tanmay-bhurkunde/">
+                        <img class="social-media-icon" src="images/social_media_icons/linkedin.png" alt="Access LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wellfound.com/u/tanmay-rajesh-bhurkunde">
+                        <img class="social-media-icon" src="images/social_media_icons/angelist.png" alt="Access Angelist">
+                    </a>
+                </li>
+ 
+            </ul>
+        </section>
+        <section id="recent-works">
+            <h2 class="title">My Recent Works</h2>
+        </section>
+        <section id="about-me">
+            <div class="content">
+                <div>
+                    <h2 class="about title">About me</h2>
+                </div>
+                <p class="description">
+                    Hello I’m a software developer! I can help you build a product ,
+                    feature or website Look through some of my work and experience!
+                    If you like what you see and have a project you need coded,
+                    don’t hestiate to contact me.
+                </p>
+                <a href="#" class="button visible">
+                    Get My Resume
+                </a>
+            </div>
+            <div class="knowledges-container">
+                <ul class="knowledges">
+                    <li class="lang">Language<ul>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li class="skl">Skills<ul>
+                            <li>Bootstrap</li>
+
+                        </ul>
+                    </li>
+                    <li class="frk">Frameworks<ul>
+                        <li>React</li>
+                        <li>Github</li>
+                        <li>Gitlab</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact-form">
+            <h2>
+                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
+            <form action="https://formspree.io/f/mqkvneww" method="POST">
+                <fieldset>
+                    <input type="text" id="full-name" name="name" maxlength="30" placeholder="Full name" required>
+                    <input type="email" id="email" name="_replyto" placeholder="Email address" required>
+                    <textarea id="message"  name="message" maxlength="500" placeholder="Enter text here" required></textarea>
+                </fieldset>
+                <div class="form-btn">
+                    <button class="button contact-me" type="submit">Get in touch</button>
+                    <small class="error-msg"></small>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="social-media">
+            <li>
+                <a href="https://github.com/tanmaybhurkunde">
+                    <img class="social-media-icon" src="images/social_media_icons/github-dark.svg" alt="Access Github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tanmay-bhurkunde/">
+                    <img class="social-media-icon" src="images/social_media_icons/linkedin-dark.svg" alt="Access LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://wellfound.com/u/tanmay-rajesh-bhurkunde">
+                    <img class="social-media-icon" src="images/social_media_icons/angelist-dark.svg" alt="Access Angelist">
+                </a>
+            </li>
+
+        </ul>
+        <hr>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/local-storage.js"></script>
+    <script src="scripts/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+/* desktop version */
+@media screen and (min-width: 995px) {
+  /* header */
+
+  header {
+    height: 72px;
+  }
+
+  header > *,
+  section {
+    padding: 0 10%;
+  }
+
+  header .toolbar-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  header .toolbar-icon {
+    display: none;
+  }
+
+  .see-project {
+    visibility: hidden;
+  }
+
+  /* headline */
+
+  #headline {
+    background: url(images/illustrations/illustration-header.svg) 100% 0% / 32% no-repeat #1c1a19;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 798px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 566px 1fr;
+    grid-template-rows: repeat(3, max-content);
+    align-content: center;
+    grid-auto-flow: column;
+    row-gap: 24px;
+  }
+
+  #headline .title {
+    font-size: 4.5em;
+    line-height: 81.5px;
+  }
+
+  #headline .subtitle {
+    font-size: 2em;
+    line-height: 44px;
+  }
+
+  .content .description {
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
+  #headline .description {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
+  #headline .social-media {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: slide-down;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes slide-down {
+    from {
+      bottom: 200%;
+      width: 10%;
+    }
+
+    to {
+      bottom: 0%;
+      width: 10%;
+    }
+  }
+
+  /* recent works */
+
+  #recent-works {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: min-content;
+  }
+
+  #recent-works .title {
+    border: none;
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 24px;
+  }
+
+  #recent-works .title::after {
+    display: inline-block;
+    content: "";
+    background: #1c1a19;
+    width: 100%;
+    height: 1px;
+    align-self: center;
+  }
+
+  .card.diff {
+    grid-template-columns: minmax(380px, 800px) minmax(0, 566px);
+    column-gap: 24px;
+    justify-content: center;
+  }
+
+  .see-project.visible {
+    display: block;
+    height: 48px;
+    position: absolute;
+    bottom: 48px;
+    border-bottom: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
+  }
+
+  .card.diff .see-project.visible,
+  #about-me .content .see-project.visible {
+    position: static;
+    border: none;
+  }
+
+  .card.diff div {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: baseline;
+  }
+
+  .desc-modal-ds p {
+    color: #344563;
+  }
+
+  .card.diff div p {
+    text-align: justify;
+  }
+
+  .boxes {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    row-gap: 37px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+
+  .cards .card {
+    position: relative;
+  }
+
+  .project-details {
+    position: relative;
+    max-height: 440px;
+  }
+
+  .project-content {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: auto;
+    gap: 24px;
+  }
+
+  .mask-card {
+    position: absolute;
+    z-index: 1;
+    border-top: 2px solid #1c1a19;
+    border-left: 2px solid #1c1a19;
+    border-right: 2px solid #1c1a19;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: calc(100% - 48px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .visible {
+    visibility: visible;
+    display: initial;
+  }
+
+  /* popup window */
+
+  .popup {
+    overflow: visible;
+    row-gap: 22px;
+    padding: 64px 24px;
+    align-items: center;
+    justify-content: center;
+    min-width: max-content;
+  }
+
+  .popup > * {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .content-modal-ds {
+    margin-top: 6%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .content-modal-ds img {
+    max-width: 639px;
+  }
+
+  .desc-modal-ds {
+    height: 100%;
+    max-width: 639px;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .desc-modal-ds .buttons {
+    padding: 0;
+  }
+
+  .buttons a {
+    gap: 8px;
+  }
+
+  /* about me */
+
+  #about-me {
+    height: max-content;
+    background: url(images/illustrations/illustration-about.svg) 100% 8% / 30% no-repeat #1c1a19;
+  }
+
+  #about-me .content {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 36px;
+    grid-template-rows: 2fr min-content min-content 1fr;
+    height: 37em;
+  }
+
+  .about.title {
+    font-size: 4.5em;
+    line-height: 81px;
+  }
+
+  .knowledges-container {
+    height: 48em;
+    display: flex;
+    align-items: center;
+  }
+
+  .knowledges {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .knowledges ul {
+    gap: 20px;
+    margin-top: 36px;
+    align-items: flex-start;
+  }
+
+  .skl {
+    order: 1;
+  }
+
+  /* contact form */
+
+  #contact-form {
+    height: 614px;
+    display: grid;
+    grid-template-columns: minmax(0, 500px) 1fr;
+    gap: 24px;
+    align-content: center;
+  }
+
+  main #contact-form > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact-form h2 {
+    font-size: 2.5em;
+    line-height: 52px;
+    text-align: initial;
+  }
+
+  #contact-form form {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1190px) {
+  .project-content {
+    gap: 4px;
+  }
+
+  .card.diff,
+  .card.diff div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
